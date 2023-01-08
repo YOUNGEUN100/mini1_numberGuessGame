@@ -30,19 +30,15 @@ body {
 }
 
 .form-control {
-    width: 100%;
+    width: 70%;
     font-size: 3w;
     margin-right: 20px;
-    display: block;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     text-align: center;
 }
 
-.up-img {
-    display: none;
+.input-box{
+    display: flex;
 }
 
-.down-img {
-    display: none;
-}

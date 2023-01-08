@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Rowdies:wght@300;400;700&display=swap'); </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>숫자 업&다운</h1>
         <image src="./image/soju.jpg" class="main-img"></image>
-        <image src="./image/up.jpg" class="up-img"></image>
-        <image src="./image/down.jpg" class="down-img"></image>
         <div id="result-open">숫자를 맞춰보세요</div>
         <div id="chance-open">남은기회 : 5번</div>
-        <div>
+        <div class="input-box">
             <input type="number" id="input-num" class="form-control" placeholder="1부터 100까지 숫자를 입력"/>
             <button type="button" class="btn btn-success" id="play-button">GO</button>
         </div>

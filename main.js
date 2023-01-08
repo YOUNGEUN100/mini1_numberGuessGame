@@ -18,6 +18,7 @@ let chanceOpen = document.getElementById("chance-open");
 let gameOver = false;
 let resetButton = document.getElementById("reset-button");
 let history = [];
+let resultAreaImg = document.querySelector(".main-img");
 
 getRandomNum();
 playButton.addEventListener("click",play);
@@ -34,13 +35,16 @@ function reset() {
     chanceOpen.textContent = "남은기회 : 5번"
     chances = 5
     playButton.disabled = false;
+    resultAreaImg.src =
+        "./image/soju.jpg";
+    inputNum.value = ""
 }
 
 function play(){
 
     let inputNumValue = inputNum.value;
 
-    if (inputNum<1 || inputNum>100){
+    if (inputNumValue<1 || inputNumValue>100){
         resultOpen.textContent = "1부터 100 사이의 숫자를 입력해주세요"
         return;
     }
@@ -55,11 +59,18 @@ function play(){
     
     if (inputNumValue > computerNum) {
         resultOpen.textContent="DOWN!";
-    } else if (inputNumValue < computerNum) {
+        resultAreaImg.src =
+        "./image/down.jpg";
+        } else if (inputNumValue < computerNum) {
         resultOpen.textContent="UP!";
+        resultAreaImg.src =
+        "./image/up.jpg";
     } else {
         resultOpen.textContent="정답입니다!";
+        resultAreaImg.src =
+        "./image/correct.jpg";
     }
+
 
     if (chances < 1) {
         gameOver = true;
