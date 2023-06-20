@@ -3,6 +3,6 @@
 ## 홈페이지
 - https://preeminent-griffin-ff6993.netlify.app/
 ## 캡쳐화면
-<img src="https://github.com/YOUNGEUN100/mini1_numberGuessGame/assets/121986519/107c8ac8-82e6-435a-b35c-e69fc03b9dad" width="300px">
+<img src="https://github.com/YOUNGEUN100/mini1_numberGuessGame/assets/121986519/107c8ac8-82e6-435a-b35c-e69fc03b9dad" width="500px">
 
 
